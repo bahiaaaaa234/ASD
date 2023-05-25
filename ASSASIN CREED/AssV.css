@@ -1,0 +1,30 @@
+body {
+    background-image: url(./aparte/backgound\ Vh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    position: absolute;
+    width: 100%;
+    top: 1.5%;
+    left: 0%;
+    text-align: center;
+}
+.container-cubos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.container-cubos .retangulo {
+    background-image: url(./aparte/VH\ BOSS.jpg);
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: 150%;
+    left: 25%
+}
