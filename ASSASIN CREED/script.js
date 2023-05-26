@@ -1,6 +1,3 @@
-$('#image_id').click(function() {
-    $(".frameVideo").attr('src', $(".frameVideo").attr('src') + '?autoplay=1');
-});
 
 function clickey(id) {
     console.log(id)
