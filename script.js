@@ -1,16 +1,14 @@
-const imgs = document.getElementById("img");
-const img = document.querySelectorAll("#img img");
 
-let idx = 0;
-
-function carrossel()
-idx++
-
-if (idx > img.length - 1) {
-    idx = 0;
+function clickey(id) {
+    console.log(id)
+    switch (id) {
+        case 'BlackFlag':
+        window.open("youtube.com")
+            break;
+        case 'Valhalla':
+            window.open("./AssV.html")
+            break
+        default:
+            break;
+    }
 }
-
-imgs.style.transform = 'translateX(${-idx  * 500}px)';
-}
-
-setInterval(container - cards, 1800);
