@@ -5,9 +5,12 @@ function clickey(id) {
         case 'BlackFlag':
         window.open("youtube.com")
             break;
-        case 'assests':
-            window.open("./AssV.html")
+        case 'Valhalla':
+            window.open("./valhalla/AssV.html")
             break
+        case 'Odyssey':
+                window.open("./Odyssey/AssIV.html")
+                break
         default:
             break;
     }

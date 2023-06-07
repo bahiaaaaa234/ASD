@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odyssey</title>
+    <link rel="icon" type="image/png" href="./assets/icon.png">
+    <link rel="stylesheet" href="AssIV.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="./assets/toggle.png.jpg"></div>
+    </header>
+
+    <div class="container-groups">
+        <div class="container-cubos">
+            <div class="retangulo"></div>
+        </div>
+    </div>
+
+    <button class="golden-button" onclick="toggleVideo();">
+        <strong>ASSISTA AO TRAILER</strong>
+      </button>
+    
+    <a href="#" class="play" onclick="toggleVideo();"><img src="./assets/botão.png"></a>
+
+    <div class="trailer" id="trailer">
+        <video src="./assets/trailer.mp4" controls="true"></video>
+        <img src="./assets/close.png" class="close" onclick="toggleVideo();">
+    </div>
+</body>
+</html>

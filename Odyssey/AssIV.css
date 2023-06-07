@@ -1,0 +1,127 @@
+body {
+    background-image: url(./assets/back-odyssey.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+
+  .logo {
+    position: absolute;
+    width: 100%;
+    top: 1.5%;
+    left: 0%;
+    text-align: center;
+  }
+  .container-cubos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+  }
+  
+  .container-cubos .retangulo {
+    background-image: url("./assets/start.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 75vw;
+    height: 75vh;
+    position: relative;
+    top: 130%;
+    left: 0%;
+  }
+
+  .golden-button {
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: transform 0.3s;
+    position: absolute;
+    top: 50%; /* Posição vertical */
+    left: 50%; /* Posição horizontal */
+    overflow: hidden;
+    top: calc(85% + 30px);
+    left: calc(40% + 20px);
+  }
+  
+  .golden-button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+    z-index: -1;
+  }
+  
+  .golden-button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: goldenrod;
+  }
+  
+  .golden-button:hover:after {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  
+    .golden-button strong {
+      font-weight: bold;
+    }
+
+  .trailer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 10000;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+  }
+  
+  .trailer.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .trailer video {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+  
+  .play {
+    position: absolute;
+    top: 87%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+}
+  
+  .play:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
