@@ -268,7 +268,7 @@ body {
     color: black;
     font-family: Portrait;
     text-align: center;
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
     line-height: 0.9 !important;
     margin: 25px 0 0 !important;
   }
@@ -277,7 +277,7 @@ body {
     
     text-align: center;
     font-family: Portrait;
-    font-size: 0.9rem !important;
+    font-size: 1.5rem !important;
     line-height: 0.9 !important;
   }
   .deus img {
@@ -287,3 +287,49 @@ body {
     height: 95vh;
     left: 0%;
     margin-top: -15%;  }
+
+    .golden2-button {
+      background-color: goldenrod;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-transform: uppercase;
+      transition: transform 0.3s;
+      position: absolute;
+      top: 50%; /* Posição vertical */
+      left: 50%; /* Posição horizontal */
+      overflow: hidden;
+      top: calc(465% + 30px);
+      left: calc(45% + 20px);
+    }
+    
+    .golden2-button:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.5s;
+      z-index: -1;
+    }
+    
+    .golden2-button:hover {
+      transform: scale(1.1);
+      background-color: white;
+      color: goldenrod;
+    }
+    
+    .golden2-button:hover:after {
+      transform: scaleX(1);
+      transform-origin: right;
+    }
+    
+      .golden2-button strong {
+        font-weight: bold;
+      }

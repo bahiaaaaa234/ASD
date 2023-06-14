@@ -28,6 +28,10 @@ function toggleVideo() {
     var trailer = document.getElementById('trailer');
     trailer.classList.toggle('active');
 }
+function toggleVideo2() {
+    var video2 = document.getElementById("trailer2");
+    video2.classList.toggle("active");
+  }
 
 function checkScroll() {
     var elements = document.querySelectorAll('.scroll-transition img');
