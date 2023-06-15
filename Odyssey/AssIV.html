@@ -1,103 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odyssey</title>
-    <link rel="icon" type="image/png" href="./assets/icon.png">
-    <link rel="stylesheet" href="AssIV.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odyssey</title>
+  <link rel="icon" type="image/png" href="./assets/icon.png">
+  <link rel="stylesheet" href="AssIV.css">
 </head>
-
-    <header>
-        <div class="logo"><img src="./assets/toggle.jpg"></div>
-    </header>
-
 <body>
-    <div class="container-groups">
-        <div class="container-cubos">
-            <div class="retangulo"></div>
-        </div>
+  <header><div class="logo"><img src="./assets/toggle.jpg"></div></header>
+  <div class="container-groups">
+    <div class="container-cubos"><div class="retangulo"></div></div>
+  </div>
+  <button class="golden-button play" onclick="toggleVideo();"><strong>ASSISTA AO TRAILER</strong></button>
+  <div class="trailer" id="trailer">
+    <video src="./assets/trailer.mp4" controls="true"></video>
+    <img src="./assets/close.png" class="close" onclick="toggleVideo();">
+  </div>
+  <div class="scroll-transition">
+    <div class="container">
+      <img src="./assets/historicos.jpg" alt="Imagem1" class="slide-right img1">
+      <img src="./assets/local.jpg" alt="Imagem2" class="slide-left img2">
+      <img src="./assets/kassadra e alexios.jpg" alt="Imagem3" class="slide-right img3">
+      <img src="./assets/guerra.jpg" alt="Imagem4" class="slide-left img4">
     </div>
-
-    <button class="golden-button play" onclick="toggleVideo();">
-        <strong>ASSISTA AO TRAILER</strong>
-    </button>
-
-    <div class="trailer" id="trailer">
-        <video src="./assets/trailer.mp4" controls="true"></video>
-        <img src="./assets/close.png" class="close" onclick="toggleVideo();">
+  </div>
+  <div class="textos-container show">
+    <div class="texto1">
+      <img src="./assets/caixa-de-texto.jpg" height="650px" width="600px" alt="Imagem de fundo" class="slide-right">
+      <div class="texto-content">
+        <h2>TORNE-SE UM HERÓI ESPARTANO</h2>   
+        <p>Explore um país inteiro cheio de ambientes e cidades selvagens no auge da Era de Ouro da Grécia. Visite Esparta e veja Atenas em toda a sua glória, siga os passos de lendas como Ulisses e Hércules e descubra os segredos da Grécia. Encontros inesperados darão vida à sua história ao encontrar personagens multifacetados, lutar contra inimigos formidáveis e muito mais.</p>
+      </div>
     </div>
-    <div class="scroll-transition">
-        <div class="container">
-            <img src="./assets/historicos.jpg" alt="Imagem1" class="slide-right img1">
-            <img src="./assets/local.jpg" alt="Imagem2" class="slide-left img2">
-            <img src="./assets/kassadra e alexios.jpg" alt="Imagem3" class="slide-right img3">
-            <img src="./assets/guerra.jpg" alt="Imagem4" class="slide-left img4">
-        </div>
+    <div class="texto2">
+      <div class="texto-content">
+        <h2>A GRÉCIA ANTIGA ESPERA</h2>
+        <p>Após ter visões de uma nova ameaça, Eivor deve aceitar seu destino como Odin e entrar em Svartalfheim, o belo, mas hostil, mundo mítico dos anões que está sob invasão. De forjas subterrâneas a picos dourados, mergulhe em um novo e perigoso mundo da mitologia nórdica e aceite o seu destino como um deus.</p>
+      </div>
+      <img src="./assets/caixa-de-texto.jpg" height="650px" width="600px" alt="Imagem de fundo">
     </div>
-     <div class="textos-container show">
-        <div class="texto1">
-          <img src="./assets/caixa-de-texto.jpg" height="650px" width="600px" alt="Imagem de fundo" class="slide-right">
-            <div class="texto-content">
-                <h2>TORNE-SE UM HERÓI ESPARTANO</h2>   
-                <p>Explore um país inteiro cheio de ambientes
-                     e cidades selvagens no auge da Era de Ouro 
-                     da Grécia. Visite Esparta e veja Atenas em toda
-                      a sua glória, siga os passos de lendas como Ulisses
-                       e Hércules e descubra os segredos da Grécia. Encontros
-                        inesperados darão vida à sua história ao encontrar personagens
-                         multifacetados, lutar contra inimigos formidáveis e muito mais.</p>
-            </div>              
-        </div>
-        <div class="texto2">
-            <div class="texto-content">
-                <h2>A GRÉCIA ANTIGA ESPERA</h2>
-                <p>Após ter visões de uma nova ameaça, Eivor deve aceitar seu destino como Odin e entrar em Svartalfheim, o belo,
-                  mas hostil, mundo mítico dos anões que está sob invasão. De forjas subterrâneas a picos dourados, mergulhe em
-                  um novo e perigoso mundo da mitologia nórdica e aceite o seu destino como um deus.</p>
-            </div>
-            <img src="./assets/caixa-de-texto.jpg" height="650px" width="600px" alt="Imagem de fundo">
-        </div>
-        <div class="texto3">
-            <div class="texto-content">
-                <h2>ESCOLHA SEU CAMINHO</h2>
-                <p>Existem maneiras quase infinitas de
-                     explorar a Grécia. Escolha entre missões 
-                     principais, missões secundárias baseadas em
-                      histórias e muito mais, à medida que você busca
-                       desenterrar os mistérios e segredos desse solo
-                        sagrado. Suas decisões moldam o mundo ao seu redor
-                         com mais de 30 horas de diálogo de escolha e vários
-                          finais de jogo. Experimente todo um mundo antigo que 
-                          evolui constantemente e reage a todas as suas decisões.</p>
-            </div>
-            <img src="./assets/caixa-de-texto.jpg" height="650px" width="600px" alt="Imagem de fundo">
-        </div>
-        <div class="texto4">
-            <div class="texto-content">
-                <h2>A ARTE DA BATALHA</h2>
-                <p>Mostre suas habilidades extraordinárias de
-                     guerreiro e mude os rumos da batalha durante
-                      um dos conflitos mais mortíferos da época, a 
-                      Guerra do Peloponeso. Envolva-se em confrontos 
-                      épicos entre Esparta e Atenas em grandes batalhas 
-                      com 150x150 soldados batalhando entre si.</p>
-            </div>
-            <img src="./assets/caixa-de-texto.jpg" height="650px" width="600px" alt="Imagem de fundo">
-        </div>
+    <div class="texto3">
+      <div class="texto-content">
+        <h2>ESCOLHA SEU CAMINHO</h2>
+        <p>Existem maneiras quase infinitas de explorar a Grécia. Escolha entre missões principais, missões secundárias baseadas em histórias e muito mais, à medida que você busca desenterrar os mistérios e segredos desse solo sagrado. Suas decisões moldam o mundo ao seu redor com mais de 30 horas de diálogo de escolha e vários finais de jogo. Experimente todo um mundo antigo que evolui constantemente e reage a todas as suas decisões.</p>
+      </div>
+      <img src="./assets/caixa-de-texto.jpg" height="650px" width="600px" alt="Imagem de fundo">
     </div>
-    <div class="deus">
-        <img src="./assets/deuses.png">
+    <div class="texto4">
+      <div class="texto-content">
+        <h2>A ARTE DA BATALHA</h2>
+        <p>Mostre suas habilidades extraordinárias de guerreiro e mude os rumos da batalha durante um dos conflitos mais mortíferos da época, a Guerra do Peloponeso. Envolva-se em confrontos épicos entre Esparta e Atenas em grandes batalhas com 150x150 soldados batalhando entre si.</p>
+      </div>
+      <img src="./assets/caixa-de-texto.jpg" height="650px" width="600px" alt="Imagem de fundo">
     </div>
-    <button class="golden2-button play" onclick="toggleVideo2();">
-        <strong>ASSISTA AO TRAILER</strong>
-    </button>
-    <div id="trailer2" class="trailer">
-        <video src="./assets/trailer2.mp4" controls="true"></video>
-        <img src="./assets/close.png" class="close" onclick="toggleVideo2();">
-      </div>                
+  </div>
+  <div class="deus"><img src="./assets/deuses.png"></div>
+  <button class="golden2-button play" onclick="toggleVideo2();"><strong>ASSISTA AO TRAILER</strong></button>
+  <div id="trailer2" class="trailer">
+    <video src="./assets/trailer2.mp4" controls="true"></video>
+    <img src="./assets/close.png" class="close" onclick="toggleVideo2();">
+  </div>
+  <script src="AssIV.js"></script>
 </body>
-<script src="AssIV.js"></script>
 </html>

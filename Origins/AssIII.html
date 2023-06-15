@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origins</title>
+    <link rel="icon" type="image/jpg" href="./assets/icon.jpg">
+    <link rel="stylesheet" href="AssIII.css">
+</head>
+
+<header>
+    <div class="logo"><img src="./assets/toggle.jpg"></div>
+</header>
+
+<body>
+    <div class="container-groups">
+        <div class="container-cubos">
+            <div class="retangulo"></div>
+        </div>
+    </div>
+    <button class="golden-button play" onclick="toggleVideo();">
+        <strong>ASSISTA AO TRAILER</strong>
+    </button>
+    <div class="trailer" id="trailer">
+        <video src="./assets/trailer.mp4" controls="true"></video>
+        <img src="./assets/close.png" class="close" onclick="toggleVideo();">
+    </div>
+</body>
+<div class="scroll-transition">
+        <div class="container">
+            <img src="./assets/local.jpg" alt="Imagem1" class="slide-right img1">
+            <img src="./assets/batalha.jpg" alt="Imagem2" class="slide-left img2">
+            <img src="./assets/perso.jpg" alt="Imagem3" class="slide-right img3">
+            <img src="./assets/princ.jpg" alt="Imagem4" class="slide-left img4">
+        </div>
+    </div>
+    <div class="textos-container show">
+       <div class="texto1">
+         <img src="./assets/caixa-de-texto.jpg" height="440px" width="400px" alt="Imagem de fundo" class="slide-right">
+           <div class="texto-content">
+               <h2>UM PAÍS INTEIRO</h2>   
+               <p>De desertos a oásis verdejantes, do Mar Mediterrâneo às tumbas de Guiza, enfrente perigosas facções antigas e feras selvagens, ao explorar esta terra gigantesca e imprevisível.</p>
+           </div>              
+       </div>
+       <div class="texto2">
+           <div class="texto-content">
+               <h2>COMBATE RECONSTRUÍDO</h2>
+               <p>Experimente um meio completamente novo de lutar, enquanto obtém itens e usa centenas de armas raras com diferentes características.</p>
+           </div>
+           <img src="./assets/caixa-de-texto.jpg" height="440px" width="400px" alt="Imagem de fundo">
+       </div>
+       <div class="texto3">
+           <div class="texto-content">
+               <h2>MISSÕES MEMORÁVEIS</h2>
+               <p>Mergulhe em uma nova aventura a cada jogo, com cada missão contando uma história intensa, emocional e memorável.</p>
+           </div>
+           <img src="./assets/caixa-de-texto.jpg" height="440px" width="400px" alt="Imagem de fundo">
+       </div>
+       <div class="texto4">
+           <div class="texto-content">
+               <h2>HISTÓRIA & PERSONAGENS</h2>
+               <p>O Egito está se enfraquecendo sob o governo de monarcas inexperientes. É a hora perfeita para que homens desonestos e desleais tentem tomar o controle, e para a Irmandade dos Assassinos ascender e assegurar que isso não ocorra.</p>
+           </div>
+           <img src="./assets/caixa-de-texto.jpg" height="440px" width="400px" alt="Imagem de fundo">
+       </div>
+   </div>
+   <div class="deus">
+       <img src="./assets/dlc.jpg">
+   </div>
+   <button class="golden2-button play" onclick="toggleVideo2();">
+    <strong>ASSISTA AO TRAILER</strong>
+</button>
+<div id="trailer2" class="trailer">
+    <video src="./assets/trailer2.mp4" controls="true"></video>
+    <img src="./assets/close.png" class="close" onclick="toggleVideo2();">
+  </div>                
+</body>
+<script src="AssIII.js"></script>
+
+</html>

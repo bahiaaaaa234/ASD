@@ -31,7 +31,12 @@ function toggleVideo() {
 function toggleVideo2() {
     var video2 = document.getElementById("trailer2");
     video2.classList.toggle("active");
-  }
+    var video = video2.querySelector("video");
+    if (!video2.classList.contains("active")) {
+        video.pause();
+        video.currentTime = 0;
+    }
+}
 
 function checkScroll() {
     var elements = document.querySelectorAll('.scroll-transition img');
